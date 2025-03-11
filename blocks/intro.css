@@ -1,23 +1,23 @@
-.intro {
+.content {
   max-width: 984px;
   margin: 0 auto;
   padding: 46px 0 46px;
 }
-.intro__title {
+.content__title {
   max-width: 830px;
   font-family: "Inter";
   font-weight: 900;
   font-size: 54px;
   line-height: 58px;
 }
-.intro__text_subtitle {
+.content__text_subtitle {
   width: 738px;
   font-family: "Inter";
   font-weight: 400;
   font-size: 24px;
   line-height: 34px;
 }
-.intro__text_author {
+.content__text_author {
   width: 732px;
   font-family: "Inter";
   font-weight: 400;
@@ -25,7 +25,7 @@
   line-height: 34px;
   text-align: right;
 }
-.intro__text_description {
+.content__text_description {
   width: 722px;
   font-family: "Inter";
   font-weight: 400;
@@ -34,37 +34,37 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .intro {
+  .content {
     margin-left: 0;
     margin-right: 0;
     padding-left: 24px;
     padding-right: 24px;
   }
-  .intro__title {
+  .content__title {
     font-size: 45px;
     line-height: 49px;
   }
-  .intro__text_subtitle {
+  .content__text_subtitle {
     width: 100%;
   }
-  .intro__text_author {
+  .content__text_author {
     width: 100%;
   }
-  .intro__text_description {
+  .content__text_description {
     width: 100%;
   }
 }
 
 @media screen and (max-width: 544px) {
-  .intro {
+  .content {
     padding-left: 16px;
     padding-right: 16px;
   }
-  .intro__title {
+  .content__title {
     font-size: 32px;
     line-height: 35px;
   }
-  .intro__text_subtitle {
+  .content__text_subtitle {
     line-height: 30px;
   }
 }
