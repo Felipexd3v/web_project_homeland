@@ -24,7 +24,7 @@
   padding: 32px 0 64px;
 }
 .header__image {
-  width: 984px;
+  width: 100%;
 }
 
 @media screen and (max-width: 1024px) {
