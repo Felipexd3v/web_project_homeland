@@ -2,7 +2,7 @@
 
 # Descrição do projeto
 
-Uma biblioteca de profissionais da TripleTen
+Uma biblioteca de profissionais da TripleTen criada com HTML e CSS
 
 # Planos de melhorias do projeto
 
