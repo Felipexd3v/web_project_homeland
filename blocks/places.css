@@ -1,0 +1,152 @@
+.places {
+  max-width: 984px;
+  margin: 0 auto;
+  padding-top: 92px;
+}
+.place {
+  max-width: 984px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto 1fr;
+  grid-template-areas:
+    "title artics"
+    "image description"
+    "link description";
+  row-gap: 48px;
+  column-gap: 40px;
+  align-items: start;
+  padding-bottom: 80px;
+}
+.place__title {
+  max-width: 460px;
+  grid-area: title;
+  font-size: 72px;
+  line-height: 76px;
+  font-weight: 900;
+  margin: 0;
+}
+.place__website_div {
+  grid-area: artics;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-top: auto;
+}
+.place__artist {
+  margin: 0;
+}
+.place__artist_title {
+  max-width: 85px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  color: #aaaaaa;
+  text-transform: uppercase;
+}
+.place__artist_text {
+  max-width: 455px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+.place__image {
+  grid-area: image;
+  max-width: 460px;
+  box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.5);
+}
+.place__image:hover {
+  opacity: 0.5;
+}
+.place__text_div {
+  grid-area: description;
+}
+.place__paragraph {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 163%;
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+.place__paragraph:first-child {
+  margin: 0;
+}
+.place__frame {
+  grid-area: link;
+  max-width: 356px;
+  height: max-content;
+  border-radius: 4px;
+  padding: 13px 20px;
+  text-decoration: none;
+  color: #ffffff;
+  background: linear-gradient(
+    to right,
+    rgba(2, 120, 254, 1),
+    rgba(0, 58, 123, 1)
+  );
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+.place__frame:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 120, 254, 0.25) 0%,
+    rgba(0, 58, 123, 0.25) 99.98%
+  );
+}
+@media screen and (max-width: 1024px) {
+  .place {
+    padding: 0 24px 72px;
+    column-gap: 28px;
+  }
+  .place__title {
+    font-size: 42px;
+    line-height: 46px;
+  }
+  .place__image {
+    width: 100%;
+  }
+  .place__paragraph {
+    font-size: 16px;
+  }
+  .place__frame {
+    width: 355px;
+  }
+}
+@media screen and (max-width: 544px) {
+  .place {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "title"
+      "artics"
+      "image"
+      "description"
+      "link";
+    padding: 0 0 50px;
+    gap: 30px;
+  }
+  .place__title {
+    width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+  .place__artist {
+    width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+  .place__image {
+    width: 100%;
+    height: auto;
+  }
+  .place__paragraph {
+    width: 100%;
+  }
+  .place__frame {
+    width: auto;
+    font-size: 14px;
+    margin: 0 16px;
+  }
+  .place__text_div {
+    margin: 0 16px;
+  }
+}
