@@ -7,6 +7,15 @@
   grid-template-rows: repeat(2, 1fr);
   gap: 16px;
 }
+@media screen and (max-width: 1210px) {
+  .photo-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .photo-grid__image {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 1024px) {
   .photo-grid {
     grid-template-columns: repeat(2, 1fr);
